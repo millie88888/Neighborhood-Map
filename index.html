@@ -16,8 +16,6 @@
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <h1> Find some good food</h1>
-<select id="type" onchange="filterMarkers(this.value);">
-    <option value="">Please select category</option>
     <option value="second">second</option>
     <option value="car">car</option>
     <option value="third">third</option>
@@ -35,7 +33,7 @@
 
     <p data-bind='fadeVisible: filtermarker'>
     Show:
-    <button value='all' data-bind='click: typeToShow'>DIVALL</button>
+    <button data-bind='click: markersToShow'>MARKERSHOWALL</button>
     <button value='restaurant' data-bind='click: typeToShow'>EAT</button>
     <button value='drink' data-bind='click: typeToShow'>D</button>
 
@@ -55,9 +53,6 @@
 
 
 </div>
-
-
-
 
 
 
