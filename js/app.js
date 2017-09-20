@@ -19,6 +19,8 @@
         infowindow.open(map, this);
       });
 
+
+
     };
 
 
@@ -49,7 +51,9 @@
         if (desiredType == 'all') { 
 
           this.points().forEach(function(point) {
+
             point.marker.setVisible(true);
+
           });
 
           return this.points();
@@ -81,6 +85,3 @@ function closeNav() {
 
 
     ko.applyBindings(viewModel);
-
-
-
